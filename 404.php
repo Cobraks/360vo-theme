@@ -24,6 +24,7 @@ defined( 'ABSPATH' ) or die( 'Acceso directo no permitido.' );
     font-family: Arial, sans-serif;
 }
 
+
 .error-404__container {
     text-align: center;
 }
