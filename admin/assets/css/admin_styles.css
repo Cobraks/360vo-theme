@@ -1,0 +1,218 @@
+
+:root {
+
+  --wrapper-padding: 1rem;
+  /*--altura-header : 5.5rem;*/
+  --altura-header: 4rem;
+  --altura-header-sticky: 4rem;
+  --altura-breadcrumbs: calc(var(--altura-header) / 1.618);
+   --altura-breadcrumbs-sticky: calc(var(--altura-header-sticky) / 1.618);
+
+  --altura-breadcrumbsYheader: calc(var(--altura-header) + var(--altura-breadcrumbs));
+  --altura-WpAdminBar: 2.875rem;
+  --altura-WpAdminBaryHeader: calc(var(--altura-WpAdminBar) + var(--altura-header));
+  --altura-barraInferior : 5rem;
+  --fs-400: 12rem;
+  --ff-primary: 'Open Sans', sans-serif;
+  --ff-secondary: 'Lora', serif;
+
+  --espacioPadding : 1rem;
+  --tarjetaMargin : 1.5rem;
+  --paddingTarjeta: 0.875rem;
+  --espacioTarjeta : 1rem;
+  --posicionTop : 1.5rem;
+  --color-breadcrumb: var(--neutral90);
+  --atc-primary: rgb(61, 73, 255);
+  --background-breadcrumb: var(--neutral90);
+  --color-breadcrumb: var(--primary50);
+  --separador-breadcrumb : var(--neutral60);
+  --espaciado: 1rem;
+
+  --espacioPadding : 1.5rem;
+  --tarjetaMargin : 1rem;
+  --paddingTarjeta: 1rem;
+  --bodySize : 1rem;
+}
+
+
+
+
+
+
+
+
+
+a.toplevel_page_gestion_360 .dashicons-before::before{
+   
+   content: "\e901"; /*e902 empresa*/
+   font-family: 'icons_plantilla360' !important;
+} /*Meter desde plugin?*/
+
+/*ESCRITORIO*/
+
+
+/*GV360 admin styles*/
+#show_add_modelo_button {
+margin-left: auto;
+display: flex;
+width: fit-content;
+margin-bottom: 24px;
+align-items: center;
+margin-right: 16px;
+}
+
+#add_modelo_form {
+   padding-left: 16px;
+   padding-right: 16px;
+}
+
+#add_modelo_form button {
+   margin-top: 16px;
+   width: 100%;
+   background: var(--primary99);
+   color: var(--primary30);
+   border: solid 1px var(--primary50);
+   border-radius: 8px;
+   height: 34px;
+   font-size: 14px; 
+}
+
+
+/*Escritorio*/
+/* Personaliza los widgets del escritorio */
+.postbox {
+   border: 1px solid var(--neutral80);
+   background-color: #f9f9f9;
+   border-radius: 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   -ms-border-radius: 10px;
+   -o-border-radius: 10px;
+}
+
+.postbox-header {
+   border-radius: 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   -ms-border-radius: 10px;
+   -o-border-radius: 10px;
+   background: var(--neutral95);
+   border: none;
+   border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.postbox h2.hndle {
+   color: var(--neutral40);
+   /*background-color: #f5f5f5; */
+   border-radius: 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   -ms-border-radius: 10px;
+   -o-border-radius: 10px;
+}
+
+.postbox .inside {
+   color: #333;
+}
+
+/*
+#dashboard-widgets .meta-box-sortables {
+   margin-bottom: 0;
+} */
+
+
+.postbox a {
+   color: var(--primary40);
+}
+
+
+
+#wpadminbar #wp-admin-bar-my-account.with-avatar #wp-admin-bar-user-actions > li {
+   margin-left: 0 !important;
+}
+
+
+/*Esto en estilos comunes, porque lo tengo duplicado en el admin y en el frontend*/
+#wp-admin-bar-flamingo-inbound-messages .ab-item,
+#wp-admin-bar-coche .ab-item
+{
+    display: flex !important;
+    align-items: center;
+}
+
+#wp-admin-bar-coche {
+  /* border-right: solid var(--primary40);
+  padding-right: 60px !important; */
+}
+
+
+
+
+
+#wp-admin-bar-flamingo-inbound-messages .update-plugins {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d63638;
+  color: #fff;
+  border-radius: 50% !important;
+  width: 24px !important;
+  height: 24px !important;
+  font-size: 10px !important;
+  font-weight: bold !important;
+  margin-right: 5px !important;
+  animation: notification-bounce 1s infinite;
+  -webkit-animation: notification-bounce 1s infinite;
+}
+
+#wp-admin-bar-flamingo-inbound-messages .plugin-count {
+  font-weight: bold !important;
+  font-size: 14px !important;
+}
+
+.avatar.photo {
+  display: none !important;
+}
+
+/* Animación sutil para el contador de notificaciones */
+@keyframes notification-bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2px);
+    }
+}
+/* 
+#wpadminbar {
+   background: var(--primary5);
+}
+
+#adminmenu, #adminmenu .wp-submenu, #adminmenuback, #adminmenuwrap {
+
+  background-color: var(--primary5);
+}
+
+#adminmenu li.menu-top:hover, #adminmenu li.opensub > a.menu-top, #adminmenu li > a.menu-top:focus {
+   background-color: var(--primary40);
+}
+
+#adminmenu li.wp-has-submenu.wp-not-current-submenu.opensub:hover::after, #adminmenu li.wp-has-submenu.wp-not-current-submenu:focus-within::after {
+  border-right-color: var(--primary5);
+} */
+
+/* #adminmenu .wp-submenu a:focus, #adminmenu .wp-submenu a:hover, #adminmenu a:hover, #adminmenu li.menu-top > a:focus {
+  color: #72aee6;
+  color: var(--atc-primary) !important;
+} */
+
+
+
+
+/* Ocultar el campo 'Categoría superior' en la edición de términos */
+.taxonomy-carroceria .form-field.term-parent-wrap,
+.taxonomy-marca .form-field.term-parent-wrap,
+.taxonomy-modelo .form-field.term-parent-wrap{
+    display: none;
+}
