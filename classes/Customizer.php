@@ -111,7 +111,8 @@ class E360VO_Customizer
             'choices'  => [
                 'rojo' => __('Rojo', '360vo-theme'),
                 'azul' => __('Azul', '360vo-theme'),
-                // Agrega más opciones que quieras
+                'verde' => __('Verde', '360vo-theme'),
+                'morado' => __('Morado', '360vo-theme'),
             ],
         ]);
 
